@@ -17,6 +17,7 @@ body{
     margin: 0;
 }
 
+/* Style Container for Solid & Gradient Circles */
 .container{
     display: flex;
     align-items: center;
@@ -64,4 +65,24 @@ body{
     top: 0; left: 0; /* Move to middle of Gradient Circle */
     z-index: -1; /* Place on top of Gradient Circle */
     border-radius: 50%; /* Make it a Circle */ 
+}
+
+
+/* Style Container for Pointer */
+.pointer-container{
+    position: absolute;
+    top: -40px; /* Starts from Outside of Circles */
+    left: 140px; /* From Solid Circle Border */
+    width: 20px; /* Pointer Width */
+    height: 190px; /* Ends at Center of Circles */
+
+}
+
+/* Style Pointer */
+.pointer{
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
 }
