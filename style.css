@@ -55,3 +55,13 @@ body{
     border-radius: 50%; /* Make it a Circle */
     
 }
+
+/* Style Solid Circle */
+.circle{
+    background-color: #010f1c;
+    height: 100%; width: 100%; /* Set Full Height & Width (300px) of Container */
+    position: absolute;
+    top: 0; left: 0; /* Move to middle of Gradient Circle */
+    z-index: -1; /* Place on top of Gradient Circle */
+    border-radius: 50%; /* Make it a Circle */ 
+}
