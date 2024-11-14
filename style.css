@@ -75,6 +75,24 @@ body{
     left: 140px; /* From Solid Circle Border */
     width: 20px; /* Pointer Width */
     height: 190px; /* Ends at Center of Circles */
+    background-color: red; /* Temp */
+    animation: rotate 7.5s linear forwards infinite; /* Add animation */
+
+    /*  rotate: Name of the animation.
+        7.5s: Animation will take 7.5 seconds to complete one full cycle.
+        linear: Animation proceeds at a constant speed from start to finish, 
+                without any acceleration or deceleration.
+        forwards: Animation will stay in its final state 
+                  (as defined at the end of the @keyframes) after it completes each cycle.
+        infinite: Loop indefinitely, so the element will continue to animate continuously 
+                  every 7.5 seconds.
+
+    */
+
+    transform-origin: bottom center;
+
+    /* Rotate around bottom-center point instead of spinning around its central point.*/
+
 
 }
 
@@ -85,4 +103,21 @@ body{
     height: 20px;
     width: 20px;
     display: block;
+}
+
+
+/* Create Pointer Rotation Animation */
+@keyframes rotate{
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+    /* With this @keyframes, 
+       the element will rotate 360 degrees around its center every 7.5 seconds, 
+       creating a smooth, endless spinning effect. */
 }
