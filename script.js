@@ -38,8 +38,8 @@ setInterval(breatheAnimation, totalTime);
 
 /* 
     breatheAnimation() is called every 7.5 Seconds
-        1. Show 'Breath In!' for 3 seconds
+        1. Show 'Breath In!' & Set container class .grow for 3 seconds
         2. Change status to 'Hold!' for 1.5 seconds
-        3. Change status to 'Breathe Out!' for 3 seconds
+        3. Change status to 'Breathe Out!' & Set container class .shrink  for 3 seconds
 
 */

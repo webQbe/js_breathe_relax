@@ -16,3 +16,16 @@ body{
     align-items: center;
     margin: 0;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: auto; /* Move to middle */
+    position: relative;
+    transform: scale(1);
+
+}
+
