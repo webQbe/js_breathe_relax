@@ -75,7 +75,6 @@ body{
     left: 140px; /* From Solid Circle Border */
     width: 20px; /* Pointer Width */
     height: 190px; /* Ends at Center of Circles */
-    background-color: red; /* Temp */
     animation: rotate 7.5s linear forwards infinite; /* Add animation */
 
     /*  rotate: Name of the animation.
@@ -106,6 +105,24 @@ body{
 }
 
 
+/* Add Grow Animation to Container */
+.container.grow{
+
+    animation: grow 3s linear forwards;
+    /* Unlike rotate element will not continue to animate continuously, 
+       when grow ends, shrink starts */
+}
+
+
+/* Add Shrink Animation to Container */
+.container.shrink{
+
+    animation: shrink 3s linear forwards;
+
+}
+
+
+
 /* Create Pointer Rotation Animation */
 @keyframes rotate{
 
@@ -120,4 +137,41 @@ body{
     /* With this @keyframes, 
        the element will rotate 360 degrees around its center every 7.5 seconds, 
        creating a smooth, endless spinning effect. */
+}
+
+
+/* Create Grow Animation */
+@keyframes grow{
+
+    from{
+        transform: scale(1); /* Default Scale */
+    }
+
+    to {
+            transform: scale(1.2);
+        }
+
+    /* With this @keyframes, 
+       the element will scale from 1 to 1.2 every 6 seconds, 
+       creating a smooth, endless scaling effect. */
+
+}
+
+
+
+/* Create Shrink Animation */
+@keyframes shrink{
+
+    from{
+            transform: scale(1.2);
+        }
+
+    to {
+            transform: scale(1);
+        }
+
+    /* With this @keyframes, 
+       the element will scale from 1.2 to 1 every 6 seconds, 
+       creating a smooth, endless scaling effect. */
+
 }
